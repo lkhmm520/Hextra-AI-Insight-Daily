@@ -27,21 +27,21 @@ Hexi 2077's AI News Hub
 ## Our Core Values
 
 {{< cards cols="3" >}}
-  {{< card title="Signal Over Noise" icon="newspaper" subtitle="Signal Over Noise? Yeah, that's totally our jam! We're not just adding to the noise; we're slicing through all the chatter, pulling out what *really* matters from thousands of daily updates. Seriously, think of all the hours you'll get back!" >}}
-  {{< card title="Contextual Insight" icon="translate" subtitle="Contextual Insight is what we totally deliver! We don't just translate; we serve up razor-sharp analysis, giving you the actual lowdown on bleeding-edge AI developments. Seriously, this is where you get the real scoop!" >}}
-  {{< card title="Practical Focus" icon="sparkles" subtitle="Practical Focus is absolutely key for us! We're tracking how AI tools are *really* shaking things up in the wild, helping you snag genuine opportunities in the productivity revolution. It's totally time to level up your game!" >}}
+  {{< card title="Signal Over Noise" icon="newspaper" subtitle="Signal Over Noise? Totally our jam! We're not just cranking up the volume; we're slicing through the daily digital din, pulling out what *truly* matters from zillions of updates. Seriously, imagine all the precious hours you'll snag back! 🚀" >}}
+  {{< card title="Contextual Insight" icon="translate" subtitle="Contextual Insight is totally what we deliver! We don't just translate; we dish out razor-sharp analysis, giving you the actual lowdown on bleeding-edge AI developments. Seriously, this is where you get the real scoop! 🧠" >}}
+  {{< card title="Practical Focus" icon="sparkles" subtitle="Practical Focus is absolutely key for us! We're tracking how AI tools are *really* shaking things up in the wild, helping you snag genuine opportunities in the productivity revolution. It's totally time to level up your game! ✨" >}}
 {{< /cards >}}
 
 <h2>Fresh Off the Press!</h2>
 
 {{< cards cols="3" >}}
 <!-- LATEST_6_CARDS_START -->
-{{< card link="/en/2026-04/2026-04-25" title="AI News Daily 2026/04/25" subtitle="Google Gemini lands on Mac with drawing support, DeepSeek adapts to Ascend" icon="calendar" >}}
+{{< card link="/en/2026-04/2026-04-26" title="AI News Daily 2026/04/26" subtitle="Audi Q5L features Huawei Qiankun Intelligent Driving, Tuya launches Hey" icon="calendar" >}}
+  {{< card link="/en/2026-04/2026-04-25" title="AI News Daily 2026/04/25" subtitle="Google Gemini lands on Mac with drawing support, DeepSeek adapts to Ascend" icon="calendar" >}}
   {{< card link="/en/2026-04/2026-04-24" title="AI News Daily 2026/04/24" subtitle="GPT-5.5 + GB300 for 3D games, Google Gemini voice realism, Keling 4K" icon="calendar" >}}
   {{< card link="/en/2026-04/2026-04-23" title="AI News Daily 2026/04/23" subtitle="OpenAI launches healthcare chatbot, Kimi supports agent collaboration," icon="calendar" >}}
   {{< card link="/en/2026-04/2026-04-22" title="AI News Daily 2026/04/22" subtitle="GPT-Image-2 tops text-to-image arena, Gemini lands on Mac with drawing" icon="calendar" >}}
   {{< card link="/en/2026-04/2026-04-21" title="AI News Daily 2026/04/21" subtitle="OpenAI introduced a screen memory feature, and Claude's design tool can" icon="calendar" >}}
-  {{< card link="/en/2026-04/2026-04-20" title="AI News Daily 2026/04/20" subtitle="Claude 4.7 rebuilds security architecture for enhanced defense, Grok" icon="calendar" >}}
 <!-- LATEST_6_CARDS_END -->
 {{< /cards >}}
 
@@ -53,7 +53,7 @@ Hexi 2077's AI News Hub
 The [AI Weekly](/en/blog/weekly/) is seriously your ultimate starting point if you're just diving into AI! This must-have resource helps you quickly get a handle on key industry shifts, so you won't get drowned in fragmented info. Get ready to supercharge your learning, fast! ⚡
 
 <h3>2. Stay in Daily Sync</h3>
-The [AI Daily Archive](/en/2026-04/2026-04-25) is your daily dose to stay absolutely on top of everything AI! Honestly, just 5 minutes here each day keeps you perfectly aligned with the global AI rhythm. Keep your edge and never miss a beat! ✅
+The [AI Daily Archive](/en/2026-04/2026-04-26) is your daily dose to stay absolutely on top of everything AI! Honestly, just 5 minutes here each day keeps you perfectly aligned with the global AI rhythm. Keep your edge and never miss a beat! ✅
 
 <h3>3. Explore Deeper Practice</h3>
 The [Blog](/en/blog/) is your go-to for deep dives and hands-on practice, especially if you're keen to really geek out! This section is loaded with structured guides on AI tools, workflows, and seriously boosting your productivity. Go ahead, unleash your inner tech guru! 🚀
