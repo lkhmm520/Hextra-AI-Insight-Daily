@@ -299,7 +299,7 @@ jobs:
             # 提取摘要 (优先从已归档文件的 frontmatter 中提取，如果失败则从正文第一个代码块提取)
             # 修正 note_path 为归档后的路径
             archived_note_path="${TARGET_CONTENT_DIR}/${note_year_month}/${note_filename}.md"
-            n_desc=$(grep "^description:" "$archived_note_path" | head -n 1 | sed 's/^description: //;s/^"//;s/"$//' | grep -v "个人每日整理的AI资讯站")
+            n_desc=$(grep "^description:" "$archived_note_path" | head -n 1 | sed 's/^description: //;s/^"//;s/"$//' | grep -v "个人每日整理的AI资讯站" || true)
             
             if [ -z "$n_desc" ]; then
               n_desc=$(awk '/^```/{count++; next} count==1{print}' "$archived_note_path" | python3 -c 'import sys; print(sys.stdin.read().replace("\n", " ").replace("```", "").replace("`", "").replace("\"", "\\\"").strip()[:100])')
