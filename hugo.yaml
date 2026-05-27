@@ -97,7 +97,7 @@ params:
 
   navbar:
     displayTitle: false
-    displayLogo: true
+    displayLogo: false
     logo:
       path: images/logo.png
       dark: images/logo-dark.png

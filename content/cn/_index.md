@@ -1,9 +1,9 @@
 ---
-linkTitle:  
-title:  
+linkTitle:
+title:
 breadcrumbs: false
 comments: true
-description:  
+description:
 cascade:
   type: docs
 ---

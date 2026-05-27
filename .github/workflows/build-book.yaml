@@ -196,6 +196,7 @@ jobs:
                   "$MONTH" "$DAY" "$YEAR" "$MONTH_NO_ZERO" "$DAY_NO_ZERO" "$weight" "$local_description"
                 sed '1{/^## /d}' "$source_file"
               ) > "$TARGET_FILE"
+              perl -0pi -e 's/\n(?:---\s*\n\s*)?##[^\n]*(?:AI资讯日报(?:多渠道|语音版)|收听.*AI日报|AI News Daily[^\n]*(?:Multi|Channel|Audio|Voice)|AI Daily[^\n]*(?:Audio|Voice)|Listen .*AI Daily|Tune .*AI Daily|Catch .*AI Daily)[\s\S]*$/\n/si; s/[ \t]+\n/\n/g; s/\s+\z/\n/s' "$TARGET_FILE"
               echo "已归档到 $TARGET_FILE (或已更新)"
             done
           fi
