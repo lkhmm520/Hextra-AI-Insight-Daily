@@ -1,5 +1,11 @@
 name: Update Content from Daily Notes
 on:
+  # 当 PrismFlowAgent 将新日报推送到 daily/ 目录后，自动归档并更新首页
+  push:
+    branches: ["main"]
+    paths:
+      - "daily/**"
+
   # 允许在 GitHub Actions 页面手动触发此工作流
   workflow_dispatch:
     inputs:

@@ -147,7 +147,7 @@ params:
       categoryId: DIC_kwDOO_2Ows4Cr2Q0
 
   floatingWidget:
-    enable: true
+    enable: false
     url: "https://hex2077chat.hubtoday.app/"
 
 defaultContentLanguage: zh
