@@ -36,7 +36,7 @@ LOOK的AI资讯站
 
 {{< cards cols="3" >}}
 <!-- LATEST_6_CARDS_START -->
-{{< card link="2026-05/2026-05-27" title="AI资讯日报 2026/05/27" subtitle="点击阅读当日 AI 资讯精华..." icon="calendar" >}}
+{{< card link="2026-05/2026-05-27" title="AI资讯日报 2026/05/27" subtitle="摘要 - 今日AI资讯相对平静，主要动态集中在行业内部调整与技术优化 - 开源社区保持活跃，多个基础模型工具链持续迭代 - AI应用落地进入深水区，垂直领域解决方案成为焦点 - 全球AI治理框架讨论持" icon="calendar" >}}
 <!-- LATEST_6_CARDS_END -->
 {{< /cards >}}
 
