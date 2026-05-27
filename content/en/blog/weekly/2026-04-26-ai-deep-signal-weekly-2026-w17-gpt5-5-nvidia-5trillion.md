@@ -17,7 +17,7 @@ tags:
 - 人工智能趋势
 linkTitle: 04-26 AI News
 ---
-## 🤖 Hexi 2077 AI Deep Signal Weekly
+## 🤖 LOOK AI Deep Signal Weekly
 
 > **Issue. 2026 W17** • 2026/04/26
 >

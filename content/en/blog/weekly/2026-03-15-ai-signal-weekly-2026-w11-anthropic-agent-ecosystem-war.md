@@ -15,7 +15,7 @@ tags:
 - 人工智能趋势
 linkTitle: 03-15 AI News
 ---
-## Hexi 2077 AI Signal Weekly Report
+## LOOK AI Signal Weekly Report
 
 > **Journal. 2026 W11** • 2026/03/15
 >

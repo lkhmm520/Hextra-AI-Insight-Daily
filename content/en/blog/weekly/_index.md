@@ -1,5 +1,5 @@
 ---
-title: 何夕2077的AI周报
+title: LOOK的AI周报
 type: blog
 cascade:
   type: blog

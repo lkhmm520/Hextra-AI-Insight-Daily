@@ -18,7 +18,7 @@ tags:
 - Grok
 linkTitle: 03-01-Daily
 ---
-## Hexi 2077 AI Deep Dive Weekly
+## LOOK AI Deep Dive Weekly
 
 > **Journal. 2026 W09** • 2026/03/01
 >

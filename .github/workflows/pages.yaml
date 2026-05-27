@@ -68,10 +68,43 @@ jobs:
             BASE_URL="${{ steps.pages.outputs.base_url }}"
           fi
           BASE_URL="${BASE_URL%/}"
+          export BASE_URL
           echo "Using base URL: $BASE_URL"
           hugo \
             --gc --minify \
             --baseURL "$BASE_URL/"
+          BASE_PATH=$(python3 - <<'PY'
+          from urllib.parse import urlparse
+          import os
+          base_url = os.environ.get("BASE_URL", "")
+          path = urlparse(base_url).path.rstrip("/")
+          print(path)
+          PY
+          )
+          export BASE_PATH
+          if [ -n "$BASE_PATH" ]; then
+            echo "Rewriting root-relative internal links with base path: $BASE_PATH"
+            python3 - <<'PY'
+          from pathlib import Path
+          import os
+          import re
+
+          base_path = os.environ.get("BASE_PATH", "").rstrip("/")
+          if not base_path:
+              raise SystemExit(0)
+
+          internal = r"(?:20\d{2}-\d{2}|blog|tags|about|contact|privacy-policy|terms-of-service|en(?:/|$)|images|index\.xml)"
+          pattern = re.compile(r'(?P<attr>\b(?:href|src)=["\'])/(?!(?:/|%s(?:/|$)))(?P<path>%s[^"\']*)' % (re.escape(base_path.lstrip("/")), internal))
+
+          for file_path in Path("public").rglob("*"):
+              if file_path.suffix.lower() not in {".html", ".xml"}:
+                  continue
+              text = file_path.read_text(encoding="utf-8")
+              new_text = pattern.sub(lambda m: f'{m.group("attr")}{base_path}/{m.group("path")}', text)
+              if new_text != text:
+                  file_path.write_text(new_text, encoding="utf-8")
+          PY
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

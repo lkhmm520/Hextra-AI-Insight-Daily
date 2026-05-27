@@ -474,8 +474,19 @@ jobs:
         if: steps.find_changed_files.outputs.continue == 'true'
         run: |
           echo "Post-processing translated files..."
-          # 1. 基础链接替换 (Prefix internal links with /en/)
-          find content/en/ -type f -name "*.md" -exec sed -i 's|link="/|link="/en/|g; s|(/|(/en/|g; s|/en/en/|/en/|g' {} +
+          # 1. 基础链接替换：避免 GitHub Pages 项目页下的根路径链接跳到域名根目录
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          md_link = re.compile(r"\]\(/(?:en/)?(?=(?:20\d{2}-\d{2}|blog|tags|about|contact|privacy-policy|terms-of-service|index\.xml))")
+
+          for file_path in Path("content/en").rglob("*.md"):
+              text = file_path.read_text(encoding="utf-8")
+              text = text.replace('link="/en/', 'link="').replace('link="/', 'link="')
+              text = md_link.sub("](", text)
+              file_path.write_text(text, encoding="utf-8")
+          PY
           
           # 2. 为英文首页生成最近 6 条日报卡片
           TARGET_INDEX="content/en/_index.md"
@@ -488,7 +499,7 @@ jobs:
             while read -r note_path; do
               if [ -z "$note_path" ]; then continue; fi
               note_filename=$(basename "$note_path" .md)
-              rel_link="/en/$(echo "$note_filename" | cut -c 1-7)/${note_filename}"
+              rel_link="$(echo "$note_filename" | cut -c 1-7)/${note_filename}"
               
               n_y=$(echo "$note_filename" | cut -c 1-4)
               n_m=$(echo "$note_filename" | cut -c 6-7)
@@ -511,7 +522,7 @@ jobs:
             if [ -n "$LATEST_EN_NOTE" ]; then
               L_EN_FN=$(basename "$LATEST_EN_NOTE" .md)
               L_EN_MO=$(echo "$L_EN_FN" | cut -c 1-7)
-              L_EN_LINK="/en/${L_EN_MO}/${L_EN_FN}"
+              L_EN_LINK="${L_EN_MO}/${L_EN_FN}"
 
               if grep -q "LATEST_DAILY_URL" "$TARGET_INDEX"; then
                 sed -i "s|LATEST_DAILY_URL|${L_EN_LINK}|g" "$TARGET_INDEX"

@@ -4,7 +4,7 @@ type: about
 sidebar:
   exclude: true
 ---
-#### Hexi 2077 / justlovemaki
+#### LOOK / justlovemaki
 
 > A decade of code, fingertips now cold, yet aspirations remain untold.
 > But when the winds of AI thunder through, I vow to rise, a new battle to pursue.

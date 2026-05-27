@@ -1,5 +1,5 @@
 ---
-title: 何夕2077 AI 深度信号周报 (2026 W11)：Anthropic 全频谱攻势、智能体生态战与裁员换算力
+title: LOOK AI 深度信号周报 (2026 W11)：Anthropic 全频谱攻势、智能体生态战与裁员换算力
 slug: ai-signal-weekly-2026-w11-anthropic-agent-ecosystem-war
 description: 本周AI行业见证了Anthropic百万上下文与亿元生态的全面爆发，OpenClaw协议引发的智能体生态军备竞赛，以及科技巨头“裁员换算力”的结构性相变。涵盖LeCun创办AMI获10亿美元融资、AI攻克数学难题及定制癌症疫苗等前沿深度信号。
 date: 2026-03-15 12:14:36 +0800
@@ -15,7 +15,7 @@ tags:
   - 人工智能趋势
 ---
 
-## 📠 何夕2077 AI 深度信号周报
+## 📠 LOOK AI 深度信号周报
 
 > **期刊. 2026年 W11** • 2026/03/15
 >

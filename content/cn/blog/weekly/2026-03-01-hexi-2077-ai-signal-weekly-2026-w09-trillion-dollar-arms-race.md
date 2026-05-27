@@ -1,5 +1,5 @@
 ---
-title: 何夕2077 AI 深度信号周报：万亿美金军备赛、国产模型逆袭与智能体安全红线
+title: LOOK AI 深度信号周报：万亿美金军备赛、国产模型逆袭与智能体安全红线
 slug: hexi-2077-ai-signal-weekly-2026-w09-trillion-dollar-arms-race
 description: 本周聚焦 OpenAI 千亿融资与算力基建潮、Anthropic 坚守安全红线硬刚五角大楼、国产模型 Qwen3.5 与
   MiniMax 的全球崛起，以及 Grok、Gemini 3.1 和 AI 编程工具的最新突破。深度分析 AI 产业工程化落地、白领裁员潮与 Agent
@@ -19,7 +19,7 @@ tags:
   - Grok
 ---
 
-## 📠 何夕2077 AI 深度信号周报
+## 📠 LOOK AI 深度信号周报
 
 > **期刊. 2026年 W09** • 2026/03/01
 >

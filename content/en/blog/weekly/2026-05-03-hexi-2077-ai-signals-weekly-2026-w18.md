@@ -17,7 +17,7 @@ tags:
 - AI安全
 linkTitle: 05-03 AI News
 ---
-## 📠 Hexi 2077 AI Deep Signal Weekly
+## 📠 LOOK AI Deep Signal Weekly
 
 > **Journal. 2026 W18** • 2026/05/03
 >

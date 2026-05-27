@@ -16,7 +16,7 @@ tags:
 - 软银
 linkTitle: 03-08 AI News
 ---
-## 📠 Hexi 2077 AI Deep Signal Weekly
+## 📠 LOOK AI Deep Signal Weekly
 
 > **Journal. 2026 W10** • 2026/03/08
 >

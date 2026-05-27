@@ -262,7 +262,7 @@ jobs:
           LATEST_NOTE_MONTH="${L_YEAR}-${L_MONTH}"
 
           # 构建动态链接
-          LATEST_LINK="/${LATEST_NOTE_MONTH}/${L_FILENAME_NO_EXT}"
+          LATEST_LINK="${LATEST_NOTE_MONTH}/${L_FILENAME_NO_EXT}"
 
           # 1. 替换基础链接占位符 (支持重复更新)
           if grep -q "LATEST_DAILY_URL" "$TARGET_INDEX"; then
@@ -288,7 +288,7 @@ jobs:
             
             note_filename=$(basename "$note_path" .md)
             note_year_month=$(echo "$note_filename" | cut -c 1-7)
-            note_link="/${note_year_month}/${note_filename}"
+            note_link="${note_year_month}/${note_filename}"
             
             # 提取日期
             n_y=$(echo "$note_filename" | cut -c 1-4)

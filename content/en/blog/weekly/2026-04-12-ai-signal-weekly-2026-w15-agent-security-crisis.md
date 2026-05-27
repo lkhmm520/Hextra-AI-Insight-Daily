@@ -15,7 +15,7 @@ tags:
 - 国产大模型
 linkTitle: 04-12 AI News
 ---
-## 📠 Hexi 2077 AI Deep Signal Weekly
+## 📠 LOOK AI Deep Signal Weekly
 
 > **Journal. 2026 W15** • 2026/04/12
 >
